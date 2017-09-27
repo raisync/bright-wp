@@ -178,7 +178,7 @@ p.feat {
     position: absolute;
     padding-right: 65px;
     margin-bottom: -25px;
-    bottom: 0;
+    /*bottom: 0;*/
     right: 0;
 }
 
@@ -197,7 +197,7 @@ p.feat {
 }
 
 .right_col {
-  float: right;
+  /*float: right;*/
 }
 
 .right_col img {
@@ -251,4 +251,27 @@ hr {
 
 .pagenav {
   background-color: #d3d3d3 !important;
+}
+
+.navigation {
+    clear: both;
+}
+ 
+.navigation a, .navigation span {
+    color: #FFF;
+    text-decoration: none;
+    background-color:#6FB7E9; 
+    border: 1px solid #B2D1E5;
+    padding: 5px 5px;
+    margin: 2px;
+}
+ 
+.navigation a:hover, .navigation span.current {
+    border-color: #E9F2F9;
+    background-color:#6FB7E9;
+}
+ 
+.navigation span.current {
+    font-weight: bold;
+    background-color:#3C8DC5;
 }

@@ -8,120 +8,17 @@
 
 		<div class="sorter">
 			<ul>
-				<li class="active-sort"><a href="#">All</a></li> /
-				<li><a href="#">Painting</a></li> /
-				<li><a href="#">Traditional</a></li> /
-				<li><a href="#">Vector</a></li> /
-				<li><a href="#">3D</a></li>
+				<li><a href="#" class="active-sort">All</a></li> /
+				<?php wp_list_categories( array(
+					'title_li' => '',
+  					'separator' => ' / ',
+  					'style'     => '',
+			        'orderby' => 'name'
+			    ) ); ?> 
 			</ul>
 		</div>
-
-		<div class="images row">
-			<div class="col-sm-3">
-				<strong>Etiam ullamcorper</strong><br>
-				<small>Graphic design</small>
-				<div class="box">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<strong>Curabitur et ligula</strong><br>
-				<small>Graphic design</small>
-				<div class="box">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<strong>Integer aliquam</strong><br>
-				<small>Graphic design</small>
-				<div class="box">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<strong>Quisque lorem</strong><br>
-				<small>Graphic design</small>
-				<div class="box">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<strong>Etiam ullamcorper</strong><br>
-				<small>Graphic design</small>
-				<div class="box">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<strong>Curabitur et ligula</strong><br>
-				<small>Graphic design</small>
-				<div class="box">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<strong>Integer aliquam</strong><br>
-				<small>Graphic design</small>
-				<div class="box">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<strong>Quisque lorem</strong><br>
-				<small>Graphic design</small>
-				<div class="box">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<strong>Etiam ullamcorper</strong><br>
-				<small>Graphic design</small>
-				<div class="box">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<strong>Curabitur et ligula</strong><br>
-				<small>Graphic design</small>
-				<div class="box">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<strong>Integer aliquam</strong><br>
-				<small>Graphic design</small>
-				<div class="box">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png">
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<strong>Quisque lorem</strong><br>
-				<small>Graphic design</small>
-				<div class="box">
-					<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png">
-				</div>
-			</div>
-		</div>
-
-	<div class="row pages">
-		<div class="pagination">
-			<button class="btn btn-default btn-xs pagenav" href="#">&laquo;</button> 
-			<button class="btn btn-default btn-xs pagenav" href="#">&lsaquo;</button> 
-			<button class="btn btn-default btn-xs active-sort" href="#">1</button> 
-			<button class="btn btn-default btn-xs" href="#">2</button> 
-			<button class="btn btn-default btn-xs" href="#">3</button> 
-			<button class="btn btn-default btn-xs" href="#">4</button> 
-			<button class="btn btn-default btn-xs" href="#">5</button> 
-			<button class="btn btn-default btn-xs" href="#">6</button> 
-			<button class="btn btn-default btn-xs" href="#">7</button> 
-			<button class="btn btn-default btn-xs" href="#">8</button> 
-			<button class="btn btn-default btn-xs" href="#">9</button> 
-			<button class="btn btn-default btn-xs" href="#">10</button> 
-			<button class="btn btn-default btn-xs" href="#">11</button> 
-			<button class="btn btn-default btn-xs pagenav" href="#">&rsaquo;</button> 
-			<button class="btn btn-default btn-xs pagenav" href="#">&raquo;</button> 
-		</div>
-	</div>
+		
+		<?php get_template_part('blog_post'); ?>
 
 	<div class="row justify-content-around" style="margin-bottom: 5%;">
 		<div class="col-sm-4">
