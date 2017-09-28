@@ -14,15 +14,16 @@
 
 			<a href="<?php echo get_home_url(); ?>"><img src="<?php echo ot_get_option( 'logo' ); ?>" id="logo" style=""></a>
 
-			<div class="nav-main" style="margin-right: 10%">
+			<div class="nav-main" id="myTopnav" style="margin-right: 10%">
 				<?php wp_nav_menu( array(
 					'menu'           => 'navmenu',
 					'theme_location' => '__no_such_location'
 					) );
 				?>
+				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
 			</div>
 
-			<div class="right_col social" style="margin-top: -70px; float: right;">
+			<div class="right_col social" style="">
 				<a href="https://www.facebook.com/" target="_blank"><img src="<?php echo ot_get_option( 'fb' ); ?>"></a>
 				<a href="https://twitter.com/" target="_blank"><img src="<?php echo ot_get_option( 'tw' ); ?>"></a>
 				<a href="https://dribbble.com/" target="_blank"><img src="<?php echo ot_get_option( 'dr' ); ?>"></a>
@@ -32,3 +33,14 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopnav");
+			if (x.className === "nav-main") {
+				x.className += " responsive";
+			} else {
+				x.className = "nav-main";
+			}
+		}
+	</script>

@@ -12,6 +12,10 @@ body {
 	background-image: url('src/BG.png');
 }
 
+.icon {
+  display: none;
+}
+
 img#logo {
   margin-left: 10%;
   margin-right: -10%;
@@ -321,21 +325,18 @@ li.active a {
     display:none;
 }
 
-/*
-  responsive home
-*/
+div.right_col.social {
+  margin-top: -70px;
+  float: right;
+}
 
 /*
-  responsive menu
+  responsive home
 */
 
 @media all and (max-width: 1100px) {
   .nav-trigger {
       display: block;
-  }
-
-  .nav-main {
-      display: none;
   }
 
   .nav-mobile {
@@ -363,7 +364,7 @@ li.active a {
   }
 
   div.right_col.social {
-    float: none;
+    float: right;
     margin-right: 0;
   }
 
@@ -372,6 +373,48 @@ li.active a {
     margin-left: 10px;
   }
 
-  div.nav-fluid {
+  p.feat {
+    width: 100%;
+  }
+
+  .social {
+    padding-left: 0;
+    z-index: -1;
+  }
+
+  .left_col {
+    padding-right: 20px;
+  }
+
+  .nav-main a {
+    display: none;
+  }
+}
+
+/*
+  responsive menu 
+*/
+
+@media all and (max-width: 1100px) {
+
+  .nav-main a.icon {
+    /*float: right;*/
+    display: block;
+  }
+
+  .nav-main.responsive {
+    position: relative;
+  }
+
+  .nav-main.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .nav-main.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
   }
 }
