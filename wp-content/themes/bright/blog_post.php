@@ -44,7 +44,7 @@
 					<?php endwhile; ?>
 
 					<div class="navigation" style="text-align: center;">
-						<?php wpbeginner_numeric_posts_nav(); ?>
+						<?php wp_pagenavi(); ?>
 					</div><!-- /.navigation -->
 
 				<?php else: ?>

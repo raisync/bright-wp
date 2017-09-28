@@ -259,29 +259,6 @@ hr {
   background-color: #d3d3d3 !important;
 }
 
-.navigation {
-    clear: both;
-}
- 
-.navigation a, .navigation span {
-    color: #000;
-    text-decoration: none;
-    background-color: white; 
-    border: 1px solid gray;
-    padding: 5px 5px;
-    margin: 2px;
-}
- 
-.navigation a:hover, .navigation span.current {
-    border-color: #E9F2F9;
-    background-color:#6FB7E9;
-}
- 
-.navigation span.current {
-    font-weight: bold;
-    background-color:#3C8DC5;
-}
-
 .col-sm-3 a {
     text-decoration: none;
     color: black;
@@ -306,4 +283,29 @@ li.active a {
 
 .space {
   margin: 50px;
+}
+
+.wp-pagenavi {
+    clear: both;
+}
+ 
+.wp-pagenavi a, .wp-pagenavi span {
+  color: black;
+    text-decoration: none;
+    background-color: #d3d3d3; 
+    border: 1px solid black;
+    padding: 5px 5px;
+    margin: 2px;
+}
+ 
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+    border-color: black;
+    background-color:white;
+    text-decoration: none;
+}
+ 
+.wp-pagenavi span.current {
+    font-weight: bold;
+    background-color:white;
+    color: red;
 }
