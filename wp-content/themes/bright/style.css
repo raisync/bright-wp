@@ -68,11 +68,12 @@ body {
 	color: red !important;
 }
 
-li.active-page a {
+li.current-menu-item a {
   border-bottom: 1px solid red !important;
 }
 
 li a:hover {
+  border-bottom: 1px solid red !important;
   color: red !important;
   text-decoration: none;
 }

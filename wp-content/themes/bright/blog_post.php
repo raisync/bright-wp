@@ -30,15 +30,13 @@
 							</a><br>
 
 							<small>
-								<?php the_tags( array(
-									'title_li' => '',
-									) ); ?>
+								<?php the_tags(''); ?>
 								</small>
 								<div class="box">
 									<img src="<?php bloginfo('stylesheet_directory'); ?>/src/search.png" style="margin-top: 130px;">
 								</div>
 
-								<?php the_excerpt(__('Continue reading »','example')); ?>
+								<!-- <?php the_excerpt(__('Continue reading »','example')); ?> -->
 
 							</div><!-- /#post-<?php get_the_ID(); ?> -->
 
