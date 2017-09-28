@@ -44,10 +44,20 @@ body {
 	text-transform: uppercase;
 }
 
-li a {
+.sorter {
+  text-align: center;
+  text-decoration: none;
+}
+
+.sorter a {
   color: black;
 	text-decoration: none;
-	color: #000;
+  text-transform: uppercase;
+}
+
+.sorter a:hover {
+  color: red;
+  text-decoration: none;
 }
 
 .active-sort {
@@ -235,11 +245,6 @@ hr {
   margin-right: 10%; padding-left: 15%
 }
 
-.sorter {
-  text-align: center;
-  text-decoration: none;
-}
-
 .pages {
   text-align: center; padding-top: 50px; padding-bottom: 50px;
 }
@@ -274,4 +279,14 @@ hr {
 .navigation span.current {
     font-weight: bold;
     background-color:#3C8DC5;
+}
+
+.col-sm-3 a {
+    text-decoration: none;
+    color: black;
+}
+
+.col-sm-3 a:hover {
+    text-decoration: none;
+    color: red;
 }

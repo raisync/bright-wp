@@ -7,15 +7,13 @@
 		</h1>
 
 		<div class="sorter">
-			<ul>
-				<li><a href="#" class="active-sort">All</a></li> /
-				<?php wp_list_categories( array(
-					'title_li' => '',
-  					'separator' => ' / ',
-  					'style'     => '',
-			        'orderby' => 'name'
-			    ) ); ?> 
-			</ul>
+			<a href="#" class="active-sort">All</a> /
+			<?php wp_list_categories( array(
+				'title_li' => '',
+					'separator' => ' / ',
+					'style'     => '',
+		        'orderby' => 'name'
+		    ) ); ?> 
 		</div>
 		
 		<?php get_template_part('blog_post'); ?>
