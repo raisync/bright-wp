@@ -12,6 +12,12 @@ body {
 	background-image: url('src/BG.png');
 }
 
+img#logo {
+  margin-left: 10%;
+  margin-right: -10%;
+  margin-top: -20px;
+}
+
 .designer {
 	float: right;
 }
@@ -143,6 +149,7 @@ p.feat {
   height: 70px;
   width: 100%;
   text-align:center;
+  margin-right: -50%;
 }
 
 .nav-fluid {
@@ -322,20 +329,13 @@ li.active a {
   responsive menu
 */
 
-@media all and (max-width: 900px) {
+@media all and (max-width: 1100px) {
   .nav-trigger {
       display: block;
   }
 
   .nav-main {
       display: none;
-  }
-
-  #logo {
-    display: none;
-  }
-
-  .social {
   }
 
   .nav-mobile {
@@ -360,5 +360,18 @@ li.active a {
 
   .col-sm-4 {
     padding: 10px;
+  }
+
+  div.right_col.social {
+    float: none;
+    margin-right: 0;
+  }
+
+  img#logo {
+    float: left;
+    margin-left: 10px;
+  }
+
+  div.nav-fluid {
   }
 }

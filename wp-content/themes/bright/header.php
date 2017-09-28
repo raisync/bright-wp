@@ -9,10 +9,10 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="navbar" style="margin-right: -50%;">
+	<div class="navbar" style="">
 		<div class="nav-fluid">
 
-			<a href="<?php echo get_home_url(); ?>"><img src="<?php echo ot_get_option( 'logo' ); ?>" id="logo" style="margin-left: 10%; margin-right: -10%; margin-top: -20px;"></a>
+			<a href="<?php echo get_home_url(); ?>"><img src="<?php echo ot_get_option( 'logo' ); ?>" id="logo" style=""></a>
 
 			<div class="nav-main" style="margin-right: 10%">
 				<?php wp_nav_menu( array(
