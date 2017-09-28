@@ -263,10 +263,10 @@ hr {
 }
  
 .navigation a, .navigation span {
-    color: #FFF;
+    color: #000;
     text-decoration: none;
-    background-color:#6FB7E9; 
-    border: 1px solid #B2D1E5;
+    background-color: white; 
+    border: 1px solid gray;
     padding: 5px 5px;
     margin: 2px;
 }
@@ -289,4 +289,20 @@ hr {
 .col-sm-3 a:hover {
     text-decoration: none;
     color: red;
+}
+
+ul.menu a {
+  color: black !important;
+}
+
+ul.menu a:hover {
+  color: red !important;
+}
+
+li.active a {
+  color: red !important;
+}
+
+.space {
+  margin: 50px;
 }
