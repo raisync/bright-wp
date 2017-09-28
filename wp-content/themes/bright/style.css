@@ -309,3 +309,56 @@ li.active a {
     background-color:white;
     color: red;
 }
+
+.toggle-nav {
+    display:none;
+}
+
+/*
+  responsive home
+*/
+
+/*
+  responsive menu
+*/
+
+@media all and (max-width: 900px) {
+  .nav-trigger {
+      display: block;
+  }
+
+  .nav-main {
+      display: none;
+  }
+
+  #logo {
+    display: none;
+  }
+
+  .social {
+  }
+
+  .nav-mobile {
+    display: block;
+  }
+
+  .col-sm-3 {
+    text-align: center;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .search {
+    right: 0;
+  }
+
+  .box img {
+    padding-right: 0;
+  }
+
+  .col-sm-4 {
+    padding: 10px;
+  }
+}

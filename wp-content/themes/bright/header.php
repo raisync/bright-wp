@@ -12,9 +12,9 @@
 	<div class="navbar" style="margin-right: -50%;">
 		<div class="nav-fluid">
 
-			<a href="<?php echo get_home_url(); ?>"><img src="<?php bloginfo('stylesheet_directory'); ?>/src/logo.png" style="margin-left: 10%; margin-right: -10%; margin-top: -20px;"></a>
+			<a href="<?php echo get_home_url(); ?>"><img src="<?php echo ot_get_option( 'logo' ); ?>" id="logo" style="margin-left: 10%; margin-right: -10%; margin-top: -20px;"></a>
 
-			<div style="margin-right: 10%">
+			<div class="nav-main" style="margin-right: 10%">
 				<?php wp_nav_menu( array(
 					'menu'           => 'navmenu',
 					'theme_location' => '__no_such_location'
@@ -23,12 +23,12 @@
 			</div>
 
 			<div class="right_col social" style="margin-top: -70px; float: right;">
-				<a href="https://www.facebook.com/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/src/facebook.png"></a>
-				<a href="https://twitter.com/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/src/twitter.png"></a>
-				<a href="https://dribbble.com/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/src/dribbble.png"></a>
-				<a href="https://www.behance.net/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/src/behance.png"></a>
-				<a href="https://plus.google.com/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/src/google plus.png"></a>
-				<a href="https://www.rss.com/" target="_blank"><img src="<?php bloginfo('stylesheet_directory'); ?>/src/rss.png"></a>
+				<a href="https://www.facebook.com/" target="_blank"><img src="<?php echo ot_get_option( 'fb' ); ?>"></a>
+				<a href="https://twitter.com/" target="_blank"><img src="<?php echo ot_get_option( 'tw' ); ?>"></a>
+				<a href="https://dribbble.com/" target="_blank"><img src="<?php echo ot_get_option( 'dr' ); ?>"></a>
+				<a href="https://www.behance.net/" target="_blank"><img src="<?php echo ot_get_option( 'be' ); ?>"></a>
+				<a href="https://plus.google.com/" target="_blank"><img src="<?php echo ot_get_option( 'gp' ); ?>"></a>
+				<a href="https://www.rss.com/" target="_blank"><img src="<?php echo ot_get_option( 'rs' ); ?>"></a>
 			</div>
 		</div>
 	</div>
