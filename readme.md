@@ -1,4 +1,4 @@
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/WordPress.svg/1280px-WordPress.svg.png" width="300px" align="center">
+<div style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/WordPress.svg/1280px-WordPress.svg.png" width="300px"></div>
 
 ## HTML to WordPress activity
 <strong>username:</strong> <u>admin</u><br>
