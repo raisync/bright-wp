@@ -12,6 +12,9 @@
 					// Start the Loop.
 	while ( have_posts() ) : the_post();
 						// Include the page content template.
+	if ( is_page('blog') ) {
+  		get_template_part('blogs');
+	} else {
 		get_template_part( 'content', 'page' );
 
 		the_content();
@@ -19,6 +22,7 @@
 		if ( comments_open() || get_comments_number() ) {
 			comments_template();
 		}
+	}
 	endwhile;
 
 	?>

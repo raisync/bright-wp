@@ -330,6 +330,19 @@ div.right_col.social {
   float: right;
 }
 
+.blogs {
+  margin-top: 30px;
+}
+
+.blogs a {
+  color: black;
+}
+
+.blogs a:hover {
+  color: red;
+  text-decoration: none;
+}
+
 /*
   responsive home
 */
