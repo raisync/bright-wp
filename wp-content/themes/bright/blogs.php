@@ -8,10 +8,10 @@
 
 						<div id="post-<?php get_the_ID(); ?>" <?php post_class(); ?> style="padding-bottom: 30px;">
 
-							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(200,220) ); ?></a>
 
+							<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( array(200,220) ); ?></a><br><br>
 							<a href="<?php the_permalink(); ?>"><strong><?php the_title();?></strong>
-							</a><br>
+							</a><br><br>
 
 							<?php the_excerpt(__('Continue reading »','example')); ?>
 							
@@ -21,6 +21,7 @@
 							</small>
 
 							</div><?php get_the_ID(); ?>
+							<hr>
 					<?php endwhile; ?>
 
 

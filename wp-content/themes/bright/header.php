@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<?php wp_head(); ?>
 </head>
 <body>
@@ -20,28 +21,28 @@
 					'menu'           => 'navmenu',
 					'theme_location' => '__no_such_location'
 					) );
-				?>
-				<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-			</div>
+					?>
+					<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+				</div>
 
-			<div class="right_col social" style="">
-				<a href="https://www.facebook.com/" target="_blank"><img src="<?php echo ot_get_option( 'fb' ); ?>"></a>
-				<a href="https://twitter.com/" target="_blank"><img src="<?php echo ot_get_option( 'tw' ); ?>"></a>
-				<a href="https://dribbble.com/" target="_blank"><img src="<?php echo ot_get_option( 'dr' ); ?>"></a>
-				<a href="https://www.behance.net/" target="_blank"><img src="<?php echo ot_get_option( 'be' ); ?>"></a>
-				<a href="https://plus.google.com/" target="_blank"><img src="<?php echo ot_get_option( 'gp' ); ?>"></a>
-				<a href="https://www.rss.com/" target="_blank"><img src="<?php echo ot_get_option( 'rs' ); ?>"></a>
+				<div class="right_col social" style="">
+					<a href="https://www.facebook.com/" target="_blank"><img src="<?php echo ot_get_option( 'fb' ); ?>"></a>
+					<a href="https://twitter.com/" target="_blank"><img src="<?php echo ot_get_option( 'tw' ); ?>"></a>
+					<a href="https://dribbble.com/" target="_blank"><img src="<?php echo ot_get_option( 'dr' ); ?>"></a>
+					<a href="https://www.behance.net/" target="_blank"><img src="<?php echo ot_get_option( 'be' ); ?>"></a>
+					<a href="https://plus.google.com/" target="_blank"><img src="<?php echo ot_get_option( 'gp' ); ?>"></a>
+					<a href="https://www.rss.com/" target="_blank"><img src="<?php echo ot_get_option( 'rs' ); ?>"></a>
+				</div>
 			</div>
 		</div>
-	</div>
 
-	<script>
-		function myFunction() {
-			var x = document.getElementById("myTopnav");
-			if (x.className === "nav-main") {
-				x.className += " responsive";
-			} else {
-				x.className = "nav-main";
+		<script>
+			function myFunction() {
+				var x = document.getElementById("myTopnav");
+				if (x.className === "nav-main") {
+					x.className += " responsive";
+				} else {
+					x.className = "nav-main";
+				}
 			}
-		}
-	</script>
+		</script>

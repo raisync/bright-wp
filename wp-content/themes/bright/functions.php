@@ -1,6 +1,7 @@
 <?php
     add_theme_support( 'menus' );
     add_theme_support( 'widgets' );
+    add_theme_support( 'post-thumbnails' );
 	add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 
 	if ( function_exists('register_sidebar') ) {

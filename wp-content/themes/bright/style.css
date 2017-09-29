@@ -72,6 +72,7 @@ img#logo {
 
 .active-sort {
   color: red !important;
+  text-decoration: none;
 }
 
 .active-sort a {
