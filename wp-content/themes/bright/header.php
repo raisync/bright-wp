@@ -16,13 +16,13 @@
 
 			<a href="<?php echo get_home_url(); ?>"><img src="<?php echo ot_get_option( 'logo' ); ?>" id="logo" style=""></a>
 
-			<div class="nav-main" id="myTopnav" style="margin-right: 10%">
+			<div class="nav-main" id="myTopnav">
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 				<?php wp_nav_menu( array(
 					'menu'           => 'navmenu',
 					'theme_location' => '__no_such_location'
 					) );
 					?>
-					<a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
 				</div>
 
 				<div class="right_col social" style="">

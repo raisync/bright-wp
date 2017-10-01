@@ -400,19 +400,17 @@ div.right_col.social {
     padding-right: 20px;
   }
 
+  .nav-main {
+    background: white;
+    z-index: 1;
+  }
+
   .nav-main a {
     display: none;
   }
-}
-
-/*
-  responsive menu 
-*/
-
-@media all and (max-width: 1100px) {
 
   .nav-main a.icon {
-    /*float: right;*/
+    float: right;
     display: block;
   }
 
@@ -430,5 +428,42 @@ div.right_col.social {
     float: none;
     display: block;
     text-align: left;
+  }
+
+  .right_col img {
+    padding-top: 0;
+  }
+  
+  div.right_col.social {
+    float: right;
+  }
+
+  .icon {
+    padding: 25px;
+    display: none;
+    font-weight: 1900;
+    color: black;
+  }
+
+  .icon:hover {
+    text-decoration: none;
+    color: red;
+  }
+
+  .menu-navmenu-container {
+    height: 50%;
+  }
+
+  .nav-main.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  .navbar li {
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 30px;
   }
 }
