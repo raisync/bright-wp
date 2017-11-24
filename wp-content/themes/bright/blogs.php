@@ -1,5 +1,5 @@
 <div class="row blogs">
-	<div>
+	<div class="blog-post">
 		<?php query_posts('post_type=post&post_status=publish&posts_per_page=8&paged='. get_query_var('paged')); ?>
 
 		<?php if( have_posts() ): ?>
@@ -16,8 +16,8 @@
 							<?php the_excerpt(__('Continue reading »','example')); ?>
 							
 							<small>
-								<?php echo get_the_date( get_option('date_format') ); ?><br>
-								<?php the_time( 'H:i' ); ?>
+								<?php the_time( 'H:i' ); ?><br>
+								<?php echo get_the_date( get_option('date_format') ); ?>
 							</small>
 
 							</div><?php get_the_ID(); ?>
